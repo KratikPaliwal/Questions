@@ -1,0 +1,54 @@
+Condition Statements : To include condition we use condition statement.
+if is used to check the condition 
+if (n>0){ // if condition is true then the rest of the code will run
+    cout<<"Positive"<<endl; 
+    
+    
+    //Block of code  To multiple things in code we use {} BLock of code is used to right Statements.
+    Statements means what we want to do in this
+
+}
+
+To check multiple condition we use if else if else
+
+if(){
+    //code
+}
+else if(){
+    //code
+}
+else if(){
+    //code
+}
+else if(){
+    //code
+}
+.
+.
+.
+else{
+    //code
+}
+
+we do not use multiple if to check multiple condition.
+
+
+Ternary Statement : When we have to check only when condition we can use Ternary Statement.
+
+Syntax : condition ? true condition : false condition
+
+cout<<(n>10 ? "True" : "False");
+
+Loops : To use or do same things again and again we use Loops 
+
+While Loop : While loop is used when we don't know how many time the loop will run in advance.
+while(True){ (Condition)
+    //Statements
+}
+For Loop : It should be used when we know what is the start and end condition.
+
+for(start; end; increment/decrement){
+    //code
+}
+
+
