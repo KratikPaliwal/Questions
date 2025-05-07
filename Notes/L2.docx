@@ -1,0 +1,79 @@
+C++ is a case sensitive language.
+; is used to terminate the statement it  is very similar to full stop(.) in english.
+
+Main function is the starting point of the code from where the code execution will start.
+    ex: int main(){
+        //code will code here.
+    }
+
+
+#include <iostream> through this will till to compiler before compiling that their is a file iostream where their is a function cout() cin()
+
+cout is used for output. cout<<"Hello";  cin>>a; cin for input.
+
+namespace is can say a file in which logic of many function is written. 
+
+
+Basic code for printing hello world 
+
+#include <iostream>
+using namespace std;
+int main(){
+    cout<<"Hello World";  // to print hello world;
+    return 0; // the main function is integer function so we have to return an integer value without this code will run perfectly but to return zero is good programming practice.
+}
+
+
+
+endl or "\n" used to break the line and go to next line.
+
+
+// Boilerplate code 
+#include <iostream> 
+using namespace std; 
+int main(){
+    return 0; // We have to always write this code to run the file successfully
+}
+
+Comment are the part of code but it is ignored by the compiler it the time of execution.
+
+
+Variable as the container used to store data. Ex : a = 20;
+
+
+Whenever we define the variable we have to define datatype.
+
+Types of datatype : 
+int, float, char, bool, double.
+
+int datatype take 4 bytes of place in memory. 1 is a single bit. 8 is equal to 1 Byte. 8 byte is equal to 32 bits data.
+
+int = 4 Bytes.
+char = 1 Bytes. Character is first converted into ASCII value then stored in the memory.
+float = 3.14F F is used here to tell the compiler that we want to store float value not the double because by default compiler store as double. It also occupy 4 bytes of memory.
+
+
+Bool datatype is used to initalise the variable as True or False. True is stored as 1 and False is stored as 0 in memory.
+
+double is store when we store long length data. It store the value of 8 bytes of Data in the memory.
+
+int, float, char, bool and double are primitive datatype.
+
+
+Typecasting : To convert data from one type to another type.
+
+Implicate conversion : To convert from small byte data to big data.
+Ex : char to integer 1 Byte data to 1 Byte data to 4 Byte
+
+Explicate Conversion : To convert data from Big to Small. 
+Ex to convert double to integer datatype.
+Ex 100.99 to (int)100.99 the value will be 100.
+
+
+
+
+
+
+
+
+
