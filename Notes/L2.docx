@@ -1,3 +1,4 @@
+**************************Lecture2************************
 C++ is a case sensitive language.
 ; is used to terminate the statement it  is very similar to full stop(.) in english.
 
@@ -112,7 +113,7 @@ Syntax : condition ? true condition : false condition
 cout<<(n>10 ? "True" : "False");
 
 
-**********************Lecture 2********************************
+**********************Lecture 3********************************
 Loops : To use or do same things again and again we use Loops 
 
 While Loop : While loop is used when we don't know how many time the loop will run in advance.
@@ -139,6 +140,19 @@ for(int i=0; i<n; i++){
 
 Keywords are the special words for the compiler. We cannot use the keywords as the variable name.
 
+******************************Lecture4***********************
+Patterns : Never directly asked in the interviews 
+
+
+// Pattern 1 
+    1234 //n=4
+    1234
+    1234
+    1234
+
+In patterns the outer loops defined for how many rows are their in pattern.
+
+To print in a single row the logic will be written in the inner loop.
 
 
 
