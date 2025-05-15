@@ -156,6 +156,22 @@ To print in a single row the logic will be written in the inner loop.
 
 
 
+**************************Lecture5***************************************
+
+function : Block of code that perform specific task
+ex : void printHello(){
+    cout<<"Hello";
+    return 0;
+}
+
+it is never executed without begin called 
+
+parameters : parameters are the input for the functions.
+Function take same value.
+
+
+
+
 
 
 
