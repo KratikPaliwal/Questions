@@ -170,6 +170,21 @@ parameters : parameters are the input for the functions.
 Function take same value.
 
 
+How function are stored in the memory 
+There are two types memory 
+ 1. Stack memory : It is used for static allocation.
+ 2. Heap memory : It is used for dynamic allocation.
+
+
+ function are stored in a stack 
+
+ main function automatically called by the compiler we don't have to call it.
+
+ if we have a void function so we can use the return to return the control.
+
+Pass by value: when we call a function their will a another copy of their value is generated. The copy is generated to another different place in the memory 
+
+
 
 
 
