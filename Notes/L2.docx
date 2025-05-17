@@ -185,6 +185,26 @@ There are two types memory
 Pass by value: when we call a function their will a another copy of their value is generated. The copy is generated to another different place in the memory 
 
 
+*****************************Lecture7*************************************
+
+Bitwise Operator : 
+Left shift Operator : suppose we have to shift 10<<2 then 10 in binary is 1010 so after shiting to 2 bits it become 101000
+
+Formula : Ans = a*2^b
+
+Right shift Operator : suppose we have to shift the Operator by 10>>2 
+so 10 in binary is 1010 then after right shift the operator will become 
+0010 
+
+Formula Ans = a/2^b
+
+
+Data Modifier : change the meaning of datatype
+
+types of Data Modifier : 
+long, short, long long, signed, unsigned
+
+
 
 
 
