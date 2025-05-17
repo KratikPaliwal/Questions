@@ -38,7 +38,7 @@ int main(){
     cout<<(sum1ToN(b));
 
     // cout<<sumOfTwo(a,b)<<endl;// arguments are the actual value passed to function
-    // //  Parameters are the ocpies of arguments 
+    // //  Parameters are the copies of arguments 
 
     // int min= minOfTwoNumber(a,b);
     // cout<<"min element is : "<<min<<endl;
