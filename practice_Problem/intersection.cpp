@@ -24,7 +24,4 @@ int main(){
     inputArr(arr,n);
     inputArr(arr1,t);
     intersection(arr, arr1, n, t);
-
-
-
 }
