@@ -210,10 +210,34 @@ DSA is Stated Basic Notes are completed
 
 
 
+Vectors are similar to array but they are dynamic in nature.
+
+
+Vectors queue stack are the STL container 
+vector declaration : vector <int>vect;
 
 
 
 
+vector Function : 
+size : to print the size of vector vec.size()
+push_back(1);
+pop_back();
+at 
+back 
+front
+
+Static v/s dynamic allocation : 
+Static allocation memory is allocated in compile time where we check the syntax. Size is fixed cannot be and Memory allocated is a stack memory 
+example is array 
+
+Dynamic allocation : Memory is allocated on the run time and the data is stored in heap memory and it is resize able example is Vectors
+
+
+Vectors memory allocation When we initalise the vector their is no size allocated but when we push_back the first element in it It will create a vector of size 1. 
+
+Second time when we push_back the second element to the vector a new vector is created of size 2(The size of new vector is double of the size of previous array) and both the elements are inserted in it.
+and the old vector is deleted automatically. 
 
 
 
