@@ -32,3 +32,4 @@ int main(){
     int maxWater=calMaxWater(vec,n);
     cout<<maxWater<<endl;
 }
+
