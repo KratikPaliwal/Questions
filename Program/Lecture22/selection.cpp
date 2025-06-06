@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
-
 void vectorInput(vector <int> &vec, int n){
     for(int i=0; i<n; i++){
         int ele;
@@ -13,6 +11,18 @@ void vectorInput(vector <int> &vec, int n){
     return;
 }
 
+void selectionSort(vector <int> &vec){
+    for(int i=0; i<vec.size()-1; i++){
+        int smallele=i;
+        for(int j=i+1; j<vec.size(); j++){
+            if(vec[j]<vec[smallele]){
+                smallele=j;
+            }
+        }
+        swap(vec[i], vec[smallele]);
+    }
+}
+
 void displayVector(vector <int> vec){
 
     for(int i=0; i<vec.size(); i++){
@@ -21,29 +31,14 @@ void displayVector(vector <int> vec){
     cout<<endl;
 
 }
-
-void bubbleSort(vector <int> &vec){
-    bool isswap=false;
-    for(int i=0; i<vec.size(); i++){
-        for(int j=0; j<vec.size()-i-1; j++){
-            if(vec[j]>vec[j+1]){
-                swap(vec[j], vec[j+1]);
-                isswap=true;
-            }
-        }
-        if(!isswap){
-            return;
-        }
-
-    }
-    return;
-}
-
 int main(){
     int n;
     cin>>n;
     vector <int> vec;
-    vectorInput(vec, n);
-    bubbleSort(vec);
+    vectorInput(vec,n);
+    selectionSort(vec);
     displayVector(vec);
+
+
+
 }

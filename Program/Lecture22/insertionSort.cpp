@@ -1,8 +1,6 @@
-#include <iostream>
+#include <iostream> 
 #include <vector>
 using namespace std;
-
-
 void vectorInput(vector <int> &vec, int n){
     for(int i=0; i<n; i++){
         int ele;
@@ -22,19 +20,17 @@ void displayVector(vector <int> vec){
 
 }
 
-void bubbleSort(vector <int> &vec){
-    bool isswap=false;
-    for(int i=0; i<vec.size(); i++){
-        for(int j=0; j<vec.size()-i-1; j++){
-            if(vec[j]>vec[j+1]){
-                swap(vec[j], vec[j+1]);
-                isswap=true;
-            }
+void insertationSort(vector <int> &vec){
+    for(int i=1; i<vec.size(); i++){
+        int curr=vec[i];
+        int prev=i-1;
+        while (prev>=0 && vec[prev]>curr)
+        {
+            vec[prev+1]=vec[prev];
+            prev--;
         }
-        if(!isswap){
-            return;
-        }
-
+        vec[prev+1]=curr;
+        
     }
     return;
 }
@@ -44,6 +40,7 @@ int main(){
     cin>>n;
     vector <int> vec;
     vectorInput(vec, n);
-    bubbleSort(vec);
+    insertationSort(vec);
     displayVector(vec);
+
 }
