@@ -8,9 +8,7 @@ class Node{
         Node(int val){
             data=val;
             next=NULL;
-
         }
-
 };
 
 class List{
@@ -30,6 +28,23 @@ public:
             head=newNode;
         }  
     }
+
+    void push_back(int val){
+        if(head==NULL){
+            
+        }
+    }
+
+    void pop_front(){
+        if(head==NULL){
+            cout<<"Linked list is empty";
+            return;
+        }
+        Node* temp=head;
+        head=head->next;
+        temp->next=NULL;
+        delete temp;
+    }
     void printLL(){
         Node* temp=head;
         while(temp!=NULL){
@@ -46,6 +61,8 @@ int main(){
     ll.push_front(1);
     ll.push_front(2);
     ll.push_front(3);
+    ll.push_front(4);
+    ll.
     ll.printLL();
 
 }
