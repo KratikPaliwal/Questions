@@ -1,7 +1,7 @@
 #include <iostream>
-using namespace std; 
+using namespace std;
 class Node{
-    public : 
+    public: 
     int data;
     Node* next;
     Node(int val){
@@ -13,7 +13,7 @@ class Node{
 class List{
     Node* head;
     Node* tail;
-    public: 
+    public :
     List(){
         head=tail=NULL;
     }
@@ -27,16 +27,6 @@ class List{
             head=newNode;
         }
     }
-    void print(){
-        Node* temp;
-        temp=head;
-        while(temp!=NULL){
-            cout<<temp->data<<"->";
-            temp=temp->next;
-        }
-        cout<<"NULL"<<endl;
-    }
-
     void push_back(int val){
         Node* newNode = new Node(val);
         if(head==NULL){
@@ -44,8 +34,22 @@ class List{
         }else{
             tail->next=newNode;
             tail=newNode;
-
         }
+    }
+
+    void pop_front(){
+        Node* temp=head;
+        head=head->next;
+        temp->next=NULL;
+        delete temp;
+    }
+    void print(){
+        Node* temp=head;
+        while(temp!=NULL){
+            cout<<temp->data<<"->";
+            temp=temp->next;
+
+        }cout<<"NULL"<<endl;
     }
 
 };
@@ -53,7 +57,10 @@ int main(){
     List ll;
     ll.push_front(1);
     ll.push_front(2);
-    ll.push_front(3);
-    ll.push_back(5);
+    ll.push_back(3);
+    ll.push_back(4);
+    ll.pop_front();
     ll.print();
+    
+
 }
